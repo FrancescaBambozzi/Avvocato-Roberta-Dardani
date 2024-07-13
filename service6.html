@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ca15d6fa7.js" crossorigin="anonymous"></script>
+    <title>Avvocato Roberta Dardani</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="imgs/logo.png">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Avvocato Roberta Dardani</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">L'Avvocato</a></li>
+                <li>
+                    <a href="#services">Servizi <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li class="service"><a href="service1.html">diritto di famiglia</a></li>
+                        <li class="service"><a href="service2.html">diritto della persona</a></li>
+                        <li class="service"><a href="service3.html">responsabilità civile</a></li>
+                        <li class="service"><a href="service4.html">tutela del consumatore</a></li>
+                        <li class="service"><a href="service5.html">recupero crediti</a></li>
+                        <li class="service"><a href="service6.html">responsabilità medica</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contatti</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section id="service">
+            <h2>Responsabilità Medica</h2>
+            <div class="service-content">
+                <img src="imgs/care.png" alt="Placeholder Image">
+                <p>Lo studio si occupa della difesa delle vittime di malpractice medica e malasanità: operazioni
+                    chirurgiche errate, infezioni ospedaliere, contagio da sangue infetto, danni provocati da farmaci o
+                    vaccini, danni da parto, errata od omessa diagnosi, violazioni del consenso informato del paziente
+                    ed innumerevoli altre ipotesi di responsabilità medica.
+                </p>
+                <p>Si assistono coloro che hanno subito danni irreversibili dalla somministrazione di vaccinazioni, sia
+                    obbligatorie che raccomandate: la legge 210 del 1992 e la legge 229 del 2005 riconoscono il diritto
+                    a indennizzi da parte dello Stato a favore di coloro che siano stati danneggiati da complicanze di
+                    tipo irreversibile a causa di vaccinazioni o trasfusioni da sangue infetto.</p>
+            </div>
+        </section>
+        <!-- Contatti -->
+        <section id="contact">
+            <h2>Prenota la tua consulenza online</h2>
+            <div class="contact-form">
+                <form action="mailto:bambozzif@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Servizio:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Messaggio:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <input type="submit" value="Invia">
+                </form>
+            </div>
+            <!-- <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.4571313485926!2d13.513525576000303!3d43.617843671103806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132d7fbebeeaf7bb%3A0x51b7ef862f29ea29!2sCorso%20Giuseppe%20Mazzini%2C%20107%2C%2060121%20Ancona%20AN%2C%20Italy!5e0!3m2!1sen!2ses!4v1720712586254!5m2!1sen!2ses"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Indirizzo</h3>
+                <p>Corso Mazzini 107</p>
+                <p>60121</p>
+                <p>Ancona (AN)</p>
+            </div>
+            <div class="footer-column">
+                <h3>Orario</h3>
+                <p>Lunedì - Venerdì: 9:00 - 18:00</p>
+                <p>Sabato: 10:00 - 16:00</p>
+                <p>Domenica: Chiuso</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contatti</h3>
+                <p>Email: roberta@dardani.com</p>
+                <p>Telefono: +39 3479147908</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <p><b>&copy; 2024 Studio Legale</b></p>
+    </footer>
+</body>
+
+</html>

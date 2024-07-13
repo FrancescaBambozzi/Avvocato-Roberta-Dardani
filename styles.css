@@ -291,8 +291,13 @@ footer {
     justify-content: center;
 }
 
+#contact h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+}
+
 .contact-form {
-    background: #fff;
+    background-color: #DCDCF5;
     padding: 20px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
@@ -360,10 +365,6 @@ footer {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .service-content img {
@@ -383,6 +384,21 @@ footer {
 
 .service-points {
     text-align: left;
+    line-height: 50px;
+}
+
+.half {
+    overflow: hidden;
+}
+
+.half img {
+    float: left;
+    margin-right: 40px; 
+    max-width: 150px; 
+}
+
+.half p {
+    overflow: hidden;
 }
 
 /* Responsive Styles */
@@ -471,7 +487,7 @@ footer {
 
     main {
         padding: 10px;
-        padding-top: 350px;
+        padding-top: 380px;
     }
 }
 
