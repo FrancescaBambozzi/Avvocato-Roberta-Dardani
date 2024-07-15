@@ -33,7 +33,7 @@ h2 {
 }
 
 header {
-    background-color: #DCDCF5;
+    background-color: #DFCDF0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     color: #333;
     padding: 10px 0;
@@ -184,10 +184,10 @@ footer {
 }
 
 .square {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
-    background-color: #DCDCF5;
+    background-color: #DFCDF0;
 }
 
 .square:hover {
@@ -307,7 +307,7 @@ footer {
 }
 
 .contact-form {
-    background-color: #DCDCF5;
+    background-color: #DFCDF0;
     padding: 20px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
@@ -355,7 +355,7 @@ footer {
 }
 
 footer {
-    background-color: #DCDCF5;
+    background-color: #DFCDF0;
     padding: 20px;
     text-align: center;
 }
