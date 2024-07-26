@@ -453,11 +453,7 @@ footer {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    #home {
-        width: 100%;
-    }
-
-    body {
+    body, html {
         width: 100%;
     }
 
