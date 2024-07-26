@@ -55,9 +55,9 @@ h1 {
 }
 
 #main-nav.active {
-    transform: translateY(0); /* Move the menu into view */
-    opacity: 1; /* Make it visible */
-    visibility: visible; /* Make it visible */
+    transform: translateY(0); 
+    opacity: 1; 
+    visibility: visible; 
 }
 
 /* Navigation List Styles */
@@ -103,11 +103,12 @@ h1 {
 
 @media (max-width: 768px) {
     #main-nav {
-        display: block; /* Ensure it can be toggled */
+        display: block; 
     }
 
     #hamburger-menu {
         display: block;
+        margin-right: 10px;
     }
 }
 /* nav ul {
