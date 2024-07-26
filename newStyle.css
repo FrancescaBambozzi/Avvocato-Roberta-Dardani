@@ -15,7 +15,7 @@ header {
 }
 
 header h1 {
-    margin: 0;
+    margin: 30px 0;
     font-size: 24px;
 }
 
@@ -58,7 +58,8 @@ nav ul li:hover .dropdown {
 }
 
 main {
-    padding: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .cookie-consent {
@@ -78,7 +79,7 @@ main {
 
 section {
     margin-bottom: 20px;
-    margin-top: 60px;
+    padding: 20px;
 }
 
 section h2 {
@@ -89,42 +90,52 @@ section h2 {
 }
 
 #home {
-    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    background: url('imgs/christina-wocintechchat-com-dKBTFoarrOU-unsplash.jpg') no-repeat center center/cover; /* Background image */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 550px;
-    margin-top: 0;
+    color: #333; /* Text color */
+    text-align: center;
 }
 
 #home::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('imgs/christina-wocintechchat-com-dKBTFoarrOU-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
-    z-index: -1;
+    background: rgba(0, 0, 0, 0.5); /* Optional overlay */
+    z-index: 1;
 }
 
 .btn-prenota {
     display: inline-block;
-    margin: 10px 0;
-}
-
-.btn-prenota a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #007bff;
-    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background-color: #4CAF50;
+    padding: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
 
+.btn-prenota:hover {
+    background-color: #333;
+}
+
+.btn-prenota a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.fa-bell {
+    padding: 5px;
+}
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -196,7 +207,7 @@ section h2 {
 }
 
 .contact-form input[type="submit"] {
-    background-color: #007bff;
+    background-color: #4CAF50;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -204,7 +215,7 @@ section h2 {
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #4CAF50;
 }
 
 footer {
