@@ -113,6 +113,9 @@ section h2 {
     z-index: 1;
 }
 
+#home h2 {
+    max-width: 200px;
+}
 .btn-prenota {
     display: inline-block;
     margin-top: 20px;
