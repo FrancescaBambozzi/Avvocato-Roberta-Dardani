@@ -69,7 +69,6 @@ main {
     font-size: 14px;
     position: fixed;
     bottom: 0;
-    width: 100%;
 }
 
 .cookie-consent button {
@@ -91,14 +90,14 @@ section h2 {
 
 #home {
     position: relative;
-    width: 100%;
-    height: 100vh; /* Full height of the viewport */
-    background: url('imgs/christina-wocintechchat-com-dKBTFoarrOU-unsplash.jpg') no-repeat center center/cover; /* Background image */
+    /* width: 100%; */
+    height: 100vh; 
+    background: url('imgs/christina-wocintechchat-com-dKBTFoarrOU-unsplash.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #333; /* Text color */
+    color: #333; 
     text-align: center;
 }
 
@@ -107,15 +106,12 @@ section h2 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Optional overlay */
+    background: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
 
-#home h2 {
-    max-width: 200px;
-}
 .btn-prenota {
     display: inline-block;
     margin-top: 20px;
@@ -254,6 +250,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+    #home h2 {
+        max-width: 200px;
+    }
     nav ul {
         flex-direction: column;
     }
@@ -267,7 +266,7 @@ footer {
     }
 
     .contact-form form {
-        width: 100%;
+        /* width: 100%; */
     }
 
     .footer-container {
