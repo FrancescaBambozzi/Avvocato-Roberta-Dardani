@@ -19,7 +19,98 @@ header h1 {
     font-size: 24px;
 }
 
-nav ul {
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative; /* Needed for positioning the popup */
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Navigation Styles */
+#main-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute; /* Positioned relative to the header */
+    top: 100%; /* Position below the header */
+    left: 0;
+    background-color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it's above other content */
+    transform: translateY(-20px); /* Initial hiding effect */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+#main-nav.active {
+    transform: translateY(0); /* Move the menu into view */
+    opacity: 1; /* Make it visible */
+    visibility: visible; /* Make it visible */
+}
+
+/* Navigation List Styles */
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-nav li {
+    position: relative;
+}
+
+#main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    display: none;
+    background-color: #444;
+    min-width: 160px;
+    position: relative;
+}
+
+.dropdown li {
+    display: block;
+}
+
+#main-nav li:hover .dropdown {
+    display: block;
+}
+
+/* Hamburger Menu Styles */
+#hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #main-nav {
+        display: block; /* Ensure it can be toggled */
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+}
+/* nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -41,7 +132,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #575757;
-}
+} 
 
 .dropdown {
     display: none;
@@ -55,7 +146,7 @@ nav ul li:hover .dropdown {
 
 .dropdown li a {
     padding: 10px 20px;
-}
+} */
 
 main {
     padding: 0;
