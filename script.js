@@ -15,23 +15,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-/* HAMBURGER MENU */
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburgerMenu = document.getElementById('hamburger-menu');
-    const mainNav = document.getElementById('main-nav');
-    const menuItems = document.querySelectorAll('#main-nav a');
-    
-    // Toggle the menu visibility on hamburger menu click
-    hamburgerMenu.addEventListener('click', () => {
-        mainNav.classList.toggle('active');
-    });
-
-    // Close the menu when any menu item is clicked
-    menuItems.forEach(item => {
-        item.addEventListener('click', () => {
-            if (window.innerWidth <= 768) {
-                mainNav.classList.remove('active');
-            }
-        });
-    });
-});
