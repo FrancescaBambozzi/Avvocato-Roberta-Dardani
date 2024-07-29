@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener('DOMContentLoaded', () => {
     const hamburgerMenu = document.getElementById('hamburger-menu');
     const mainNav = document.getElementById('main-nav');
-    const menuItems = document.querySelectorAll('#main-nav a'); // Select all menu items (including dropdowns)
+    const menuItems = document.querySelectorAll('#main-nav a');
     
     // Toggle the menu visibility on hamburger menu click
     hamburgerMenu.addEventListener('click', () => {
@@ -29,7 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Close the menu when any menu item is clicked
     menuItems.forEach(item => {
         item.addEventListener('click', () => {
-            mainNav.classList.remove('active');
+            if (window.innerWidth <= 768) {
+                mainNav.classList.remove('active');
+            }
         });
     });
 });
